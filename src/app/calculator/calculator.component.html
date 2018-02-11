@@ -1,0 +1,59 @@
+<div class="calc">
+	<div class="calc-display">
+		<input type=text class="calc-display-input" readonly value={{display}}/>
+	</div>
+
+	<div class="operators">
+
+		<button class="calc-button calc-button-red calc-button-big"
+			(click)="selectOperator('/')">/</button>
+		<button class="calc-button calc-button-red calc-button-big"
+			(click)="selectOperator('*')">*</button>
+		<button class="calc-button calc-button-red calc-button-big"
+			(click)="selectOperator('+')">+</button>
+		<button class="calc-button calc-button-red calc-button-big"
+			(click)="selectOperator('-')">-</button>
+
+	</div>
+
+	<div class="calc-row">
+
+		<button class="calc-button" (click)="buildNumber('7')">7</button>
+		<button class="calc-button" (click)="buildNumber('8')">8</button>
+		<button class="calc-button" (click)="buildNumber('9')">9</button>
+
+	</div>
+
+	<div class="calc-row">
+
+		<button class="calc-button" (click)="buildNumber('4')">4</button>
+		<button class="calc-button" (click)="buildNumber('5')">5</button>
+		<button class="calc-button" (click)="buildNumber('6')">6</button>
+
+	</div>
+
+	<div class="calc-row">
+
+		<button class="calc-button" (click)="buildNumber('3')">3</button>
+		<button class="calc-button" (click)="buildNumber('2')">2</button>
+		<button class="calc-button" (click)="buildNumber('1')">1</button>
+
+	</div>
+
+	<div class="calc-row">
+
+		<button class="calc-button" (click)="buildNumber('.')">.</button>
+		<button class="calc-button" (click)="buildNumber('0')">0</button>
+		<button class="calc-button" (click)="clear()">C</button>
+
+	</div>
+
+	<div class="calc-row">
+	
+		<button type="button"
+			class="calc-button calc-button-yellow calc-button-big"
+			(click)="showResult()">=</button>
+			
+	</div>
+
+</div>

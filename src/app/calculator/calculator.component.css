@@ -1,0 +1,94 @@
+.calc {
+	margin: 50px auto;
+	padding: 15px;
+	width: 320px;
+	background: #3d4543;
+	border: 1px solid #222;
+	border-radius: 4px;
+}
+
+.calc-display {
+	margin: 0 0 20px;
+	padding: 3px;
+	background: #222;
+	border-radius: 3px;
+}
+
+.calc-display-input {
+	display: block;
+	width: auto;
+	height: 35px;
+	padding: 0 8px;
+	font: 26px/35px UbuntuMono, monospace;
+	color: #444;
+	text-align: right;
+	background: #bccd95;
+	background-clip: padding-box;
+	border: 1px solid #222;
+	border-radius: 2px;
+}
+
+.calc-row, .operators {
+	margin-top: 7px;
+	zoom: 1;
+}
+
+.calc-row:before, .calc-row:after, .operators:after, .operators:before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.calc-button {
+	float: left;
+	padding: 0;
+	margin: 0 0 0 7px;
+	width: 74px;
+	font: 15px/35px UbuntuMono, monospace;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	background: #313131;
+	background-clip: padding-box !important;
+	border: 0;
+	/* IE 8 fix */
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.calc-row .calc-button {
+	width: 101px;
+	margin-bottom: 10px;
+}
+
+.calc-row {
+	margin-left: 0px;
+}
+
+.calc-button:first-child {
+	margin-left: 0;
+}
+
+.calc-button-red {
+	background: #ff8040;
+}
+
+.calc-button-yellow {
+	background: #ffa70c;
+	width: 100% !important;
+}
+
+.calc-button-big {
+	font-size: 16px;
+}
+
+.lt-ie8 .calc-display-input {
+	width: 152px;
+}
+
+.lt-ie7 .calc-row {
+	margin-left: -7px;
+}
